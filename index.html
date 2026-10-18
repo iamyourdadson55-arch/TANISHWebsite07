@@ -13,8 +13,7 @@
   <body>
     <div id="app"></div>
 
-    <!-- The app expects some generated/data script to run BEFORE app.js (defines `subjects` and other globals) -->
-    <script src="./index-df41iui-.js" defer></script>
+    <!-- Only load the actual application logic. The cloud sync scaffold was causing the page to fail before the planner rendered. -->
     <script src="./app.js" defer></script>
   </body>
 </html>
